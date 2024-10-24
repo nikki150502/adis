@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Digital Resume</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.resume-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.contact-details {
+  flex: 1;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+}
+
+.experience-item, .education-item {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+ul li {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #858383;
+  color: #fff;
+  border-radius: 8px;
+}
+
+footer a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  ul li {
+    font-size: 0.9em;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <header>
+      <div class="profile-info">
+        <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+        <div class="contact-details">
+          <h1>Nikita Kumawat</h1>
+          <p>Frontend Developer</p>
+          <p>Email: nikitakumawat690@gmail.com | Phone: +91 9024755049</p>
+          <p>LinkedIn: <a href="#">linkedin.com/in/nikita</a> | GitHub: <a href="#">github.com/adis</a></p>
+        </div>
+      </div>
+    </header>
+
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>A highly motivated frontend developer with experience in JavaScript, React. Adept at building responsive web applications and working on UI/UX improvements.</p>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="experience-item">
+         
+        <p> "I have no experience yet; I am a fresher."</p>
+       
+      </div>
+      <div class="experience-item">
+        
+       
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Bachelor of Technology, Computer Science</h3>
+        <p>Arya College of Engineering and I.T. | 2022 - 2026</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Nikita Kumawat | Portfolio: <a href="#">www.nikita.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
